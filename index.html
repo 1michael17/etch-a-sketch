@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="title">Etch A Sketch</h1>
+    <main>
+        <div class="btn">
+            <button class="newNum">Choose number</button>
+                    
+            <input type="number" name="number" id="number" placeholder="Enter 1 - 64" min="1" max="64">
+            
+            <div class="dColor">
+                <input type="color" value="#800000" name="color" id="color">
+                <br><br>
+                <button class="toColor dBtn">Color</button>
+            </div>
+
+            <button class="random dBtn">Random</button>
+            <button id=" dAct" class="black dBtn">Black</button>
+            <button class="eraser dBtn">Eraser</button>
+            <button class="reset dBtn">Clear All</button>
+        </div>
+        
+        <div class="body"></div>
+   
+    </main>
     <script src="style.css"></script>
 </body>
 </html>
