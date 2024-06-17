@@ -26,7 +26,7 @@ function randomColor(a) {
 }
 
 function rndBtn(){
-    toActive();
+    unActive();
     btnRandom.setAttribute('id', 'dAct');
     dBody.addEventListener('mouseover', (e) => {
         color = `rgb(${randomColor(254)},${randomColor(253)},${randomColor(255)}`;
