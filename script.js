@@ -8,3 +8,10 @@ const inputNum = document.querySelector('#number');
 const btnColor = document.querySelector('.toColor');
 const inputColor = document.querySelector('#color');
 const dBtn = document.querySelectorAll('.dBtn');
+
+
+function toActive(){
+    dBtn.forEach(e=>{
+    e.removeAttribute('id', 'dAct');
+    });
+}
