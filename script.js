@@ -88,6 +88,8 @@ inputNum.addEventListener('input', ()=>{
 });
 
 inputColor.addEventListener('input', () => {
+    unActive();
+    btnColor.setAttribute('id', 'activeBtn');
     colorer(dBody, inputColor.value);
 });
 
