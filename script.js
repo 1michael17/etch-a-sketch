@@ -20,6 +20,12 @@ function colorer(e, col){
     });
 }
 
+function unActive(){
+    dBtn.forEach(e=>{
+    e.removeAttribute('id', 'dAct');
+    });
+}
+
 function clearer(elem) {
     elem.innerHTML = "";
     elem.style.backgroundColor = '#fff';
@@ -66,7 +72,28 @@ inputNum.addEventListener('input', ()=>{
 });
 
 btnBlack.addEventListener('click', () => {
-    toActive();
+    unActive();
     btnBlack.setAttribute('id', 'activeBtn');
     colorer(dBody, 'black');
+});
+
+inputColor.addEventListener('input', () => {
+    colorer(dBody, inputColor.value);
+});
+
+btnColor.addEventListener('click', () => {
+    unActive();
+    btnColor.setAttribute('id', 'dAct');
+    colorer(dBody, inputColor.value);
+});
+
+btnClear.addEventListener('click', () => {
+    unActive();
+    btnClear.setAttribute('id', 'dAct');
+    colorer(dBody, '#fff');
+});
+
+btnReset.addEventListener('click', () => {
+    clearer(dBody);
+    inputNum.value = 1;
 });
