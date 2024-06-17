@@ -27,7 +27,7 @@ function randomColor(a) {
 
 function rndBtn(){
     unActive();
-    btnRandom.setAttribute('id', 'dAct');
+    btnRandom.setAttribute('id', 'activeBtn');
     dBody.addEventListener('mouseover', (e) => {
         color = `rgb(${randomColor(254)},${randomColor(253)},${randomColor(255)}`;
         e.target.style.backgroundColor = color;
@@ -37,7 +37,7 @@ function rndBtn(){
 
 function unActive(){
     dBtn.forEach(e=>{
-    e.removeAttribute('id', 'dAct');
+    e.removeAttribute('id', 'activeBtn');
     });
 }
 
@@ -93,7 +93,7 @@ inputColor.addEventListener('input', () => {
 
 btnColor.addEventListener('click', () => {
     unActive();
-    btnColor.setAttribute('id', 'dAct');
+    btnColor.setAttribute('id', 'activeBtn');
     colorer(dBody, inputColor.value);
 });
 
@@ -108,7 +108,7 @@ btnBlack.addEventListener('click', () => {
 });
 btnClear.addEventListener('click', () => {
     unActive();
-    btnClear.setAttribute('id', 'dAct');
+    btnClear.setAttribute('id', 'activeBtn');
     colorer(dBody, '#fff');
 });
 
