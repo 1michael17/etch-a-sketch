@@ -20,6 +20,21 @@ function colorer(e, col){
     });
 }
 
+function randomColor(a) {
+    let color = Math.round(Math.random() * a);
+    return color;
+}
+
+function rndBtn(){
+    toActive();
+    btnRandom.setAttribute('id', 'dAct');
+    dBody.addEventListener('mouseover', (e) => {
+        color = `rgb(${randomColor(254)},${randomColor(253)},${randomColor(255)}`;
+        e.target.style.backgroundColor = color;
+    });        
+    return color;
+}
+
 function unActive(){
     dBtn.forEach(e=>{
     e.removeAttribute('id', 'dAct');
@@ -71,12 +86,6 @@ inputNum.addEventListener('input', ()=>{
     numbeR(inputPrompt);
 });
 
-btnBlack.addEventListener('click', () => {
-    unActive();
-    btnBlack.setAttribute('id', 'activeBtn');
-    colorer(dBody, 'black');
-});
-
 inputColor.addEventListener('input', () => {
     colorer(dBody, inputColor.value);
 });
@@ -87,6 +96,15 @@ btnColor.addEventListener('click', () => {
     colorer(dBody, inputColor.value);
 });
 
+btnRandom.addEventListener('click', () => {
+    rndBtn();
+});
+
+btnBlack.addEventListener('click', () => {
+    unActive();
+    btnBlack.setAttribute('id', 'activeBtn');
+    colorer(dBody, 'black');
+});
 btnClear.addEventListener('click', () => {
     unActive();
     btnClear.setAttribute('id', 'dAct');
