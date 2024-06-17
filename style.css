@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     background: #00000028;
 }
+
 h1 {
     width: 50%;
     padding: 1%;
@@ -53,7 +54,6 @@ main {
 
 .box {
     border: solid 1px rgba(160, 160, 160, 0.09);
-    cursor: pointer;
 }
 
 .btn {
@@ -100,11 +100,17 @@ button,
     cursor: pointer;
 }
 
-button:hover {
+#dAct {
+    background: #00000088;
+}
+
+button:hover,
+#dAct:hover {
     background: #8080808f;
 }
 
-button:active   {
+button:active,
+#dAct:active {
     background: #f7f7f77c;
 }
 
