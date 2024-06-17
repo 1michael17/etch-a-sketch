@@ -64,13 +64,11 @@ function numbeR(a){
     if (numb <= 64 && numb >= 1) {
         createBox(dBody, numb);
         inputNum.value = numb;
-        console.log(inputNum.value);  
     }else{
         numb = 16;
         createBox(dBody, numb);
         alert('Number greater than 64 \nNumber set to 16');
         inputNum.value = 16;
-        console.log(inputNum.value);  
     }
     if (color !== 'black' && color !== '#fff') {
         rndBtn();
