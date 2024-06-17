@@ -72,6 +72,9 @@ function numbeR(a){
         inputNum.value = 16;
         console.log(inputNum.value);  
     }
+    if (color !== 'black' && color !== '#fff') {
+        rndBtn();
+    }
 }
 
 createBox(dBody, numb);
