@@ -100,17 +100,17 @@ button,
     cursor: pointer;
 }
 
-#dAct {
+#activeBtn {
     background: #00000088;
 }
 
 button:hover,
-#dAct:hover {
+#activeBtn:hover {
     background: #8080808f;
 }
 
 button:active,
-#dAct:active {
+#activeBtn:active {
     background: #f7f7f77c;
 }
 
