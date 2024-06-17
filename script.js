@@ -37,7 +37,33 @@ function createBox(gBox, num) {
     colorer(dBody, color);
 }
 
+function numbeR(a){
+    clearer(dBody);
+    numb = a;
+    if (numb <= 64 && numb >= 1) {
+        createBox(dBody, numb);
+        inputNum.value = numb;
+        console.log(inputNum.value);  
+    }else{
+        numb = 16;
+        createBox(dBody, numb);
+        alert('Number greater than 64 \nNumber set to 16');
+        inputNum.value = 16;
+        console.log(inputNum.value);  
+    }
+}
+
 createBox(dBody, numb);
+
+newNum.addEventListener('click', () => {
+    let btnPrompt = Number(prompt('Enter number of boxes'));
+    numbeR(btnPrompt);
+});
+
+inputNum.addEventListener('input', ()=>{
+    let inputPrompt = inputNum.value;
+    numbeR(inputPrompt);
+});
 
 btnBlack.addEventListener('click', () => {
     toActive();
