@@ -99,6 +99,15 @@ button,
     box-sizing: border-box;
     cursor: pointer;
 }
+
+button:hover {
+    background: #8080808f;
+}
+
+button:active   {
+    background: #f7f7f77c;
+}
+
 footer {
     position: absolute;
     bottom: 0;
