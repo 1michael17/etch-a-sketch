@@ -6,8 +6,6 @@
     margin: 0;
 }
 
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -38,4 +36,17 @@ main {
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 1px 1px 3px 2px #00000073;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #969696;
 }
